@@ -20,5 +20,5 @@
 #' palmerpenguins.
 #'
 #' @docType data
-#' @name pinguins
+#' @name penguins
 NULL
