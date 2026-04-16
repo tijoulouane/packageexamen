@@ -1,19 +1,38 @@
 ---
-title: "presentation-packageexamen"
+title: "Utilisation du package packageexamen"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{presentation-packageexamen}
+  %\VignetteIndexEntry{Utilisation du package packageexamen}
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+  \usepackage[UTF-8]{inputenc}
 ---
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
-```{r setup}
+```{r}
 library(packageexamen)
 ```
+
+Présentation
+
+Cette vignette présente quelques fonctions du package packageexamen
+à partir du jeu de données penguins.
+
+Filtrer les données par espèce:
+
+```{r}
+res_filtre <- filtrer_penguins(penguins, "Adelie")
+head(res_filtre)
+```
+
+Calculer le poids moyen par espèce:
+```{r}
+moyenne_poids_espece(penguins)
+```
+
+Représenter la longueur maximale du bec par espèce:
+
+```{r}
+graphique_longueur_bec_max(penguins)
+```
+
+
+
