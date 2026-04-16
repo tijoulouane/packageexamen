@@ -61,4 +61,6 @@ graphique_longueur_bec_max <- function(data) {
       title = "Longueur maximale du bec par espece",
       x = "Espece",
       y = "Longueur maximale du bec")
-  }
+}
+
+utils::globalVariables(c("espece", "poids", "longueur_bec", "longueur_bec_max"))
