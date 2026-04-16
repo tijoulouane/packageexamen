@@ -1,4 +1,4 @@
-install.packages("palmerpenguins")
+#install.packages("palmerpenguins")
 library(palmerpenguins)
 
 data <- penguins
@@ -24,3 +24,5 @@ data$longueur_bec <- as.numeric(data$longueur_bec)
 data$profondeur_bec  <- as.numeric(data$profondeur_bec)
 
 write.csv(data, "penguins.csv", row.names = FALSE)
+usethis::use_data(penguins, overwrite = TRUE)
+
