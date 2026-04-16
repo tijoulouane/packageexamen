@@ -60,4 +60,5 @@ graphique_longueur_bec_max <- function(data) {
     ggplot2::labs(
       title = "Longueur maximale du bec par espece",
       x = "Espece",
-      y = "Longueur maximale du bec")}
+      y = "Longueur maximale du bec")
+  }
