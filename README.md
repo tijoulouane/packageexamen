@@ -2,6 +2,7 @@ Le premier commit de ce répertoire a été effectué le 15/04/2026 à 09h13.
 
 Suite de commandes git permettant d’obtenir l’historique demandé :
 
+```bash
 git checkout master
 git commit -m "commit A"
 git checkout -b branch1
