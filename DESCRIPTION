@@ -15,9 +15,8 @@ RoxygenNote: 7.3.3
 Imports: 
     dplyr,
     ggplot2,
-    utils
 Depends: 
-    R (>= 3.5)
+    R (>= 4.1.0)
 LazyData: true
 Suggests: 
     knitr,
